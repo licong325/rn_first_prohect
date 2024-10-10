@@ -1,6 +1,8 @@
 import React from 'react';
 import {View} from 'react-native';
-import Index from './01_StyleSheet/index';
+// import Index from './01_StyleSheet/index';
+// import Index from './02_响应式布局/index';
+import Index from './03_rn核心组件/index';
 export default function App() {
   return (
     <View>

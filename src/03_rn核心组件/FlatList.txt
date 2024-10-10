@@ -1,0 +1,30 @@
+      <View style={style.container}>
+        <Text>FlatList组件</Text>
+        <FlatList
+          data={FlatListDATA}
+          renderItem={({item}) => (
+            <Text
+              style={{
+                borderBlockColor: 'green',
+                borderWidth: 1,
+                margin: 10,
+              }}>
+              {item.title}
+            </Text>
+          )} /* 渲染列表项 */
+          keyExtractor={item => item.id}
+          horizontal={true} /* 是否开启水平布局 */
+          // numColumns={1} /* 指定按几列渲染,数据项必须等高-无法支持瀑布流*/
+          inverted={false} /* 列表是否反转 */
+          ListHeaderComponent={() => (
+            <View>
+              <Text style={{fontSize: 20}}>我是头部</Text>
+            </View>
+          )} /* 列表头部组件 */
+          ListFooterComponent={() => (
+            <View>
+              <Text style={{fontSize: 20}}>我是底部</Text>
+            </View>
+          )} /* 列表尾部组件 */
+        />
+      </View>

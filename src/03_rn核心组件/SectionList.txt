@@ -1,0 +1,42 @@
+      <View style={style.container}>
+        <Text>SectionList组件</Text>
+        <SectionList
+          sections={DATA}
+          keyExtractor={(item, index) =>
+            item + index
+          } /* 用于为给定的 item 生成一个不重复的 key */
+          renderItem={({item}) => (
+            <View style={{borderColor: 'green', borderWidth: 1}}>
+              <Text>{item}</Text>
+            </View>
+          )} /* 渲染列表项 */
+          renderSectionHeader={({section: {title}}) => (
+            <Text>{title}</Text>
+          )} /* 每一个列表项的头部 */
+          ItemSeparatorComponent={() => (
+            <View
+              style={{
+                borderWidth: 1,
+                borderColor: 'red',
+                marginTop: 10,
+                marginBottom: 10,
+              }}
+            />
+          )} /* 列表项之间的分割线 */
+          ListEmptyComponent={() => (
+            <View>
+              <Text>暂无数据</Text>
+            </View>
+          )} /* 列表为空时的占位组件 */
+          ListHeaderComponent={() => (
+            <View>
+              <Text style={{fontSize: 30}}>我是头部</Text>
+            </View>
+          )} /* 列表头部组件 */
+          ListFooterComponent={() => (
+            <View>
+              <Text style={{fontSize: 30}}>我是底部</Text>
+            </View>
+          )} /* 列表尾部组件 */
+        />
+      </View>
