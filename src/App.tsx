@@ -5,7 +5,8 @@ import {View} from 'react-native';
 // import Index from './03_rn核心组件/index';
 // import Index from './04_Animated动画组件/index';
 // import Index from './05_第三方组件/webview/index';
-import Index from './05_第三方组件/picker/index';
+// import Index from './05_第三方组件/picker/index';
+import Index from './05_第三方组件/swiper/index';
 
 
 export default function App() {
