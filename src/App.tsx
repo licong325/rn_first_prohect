@@ -7,7 +7,8 @@ import {View} from 'react-native';
 // import Index from './05_第三方组件/webview/index';
 // import Index from './05_第三方组件/picker/index';
 // import Index from './05_第三方组件/swiper/index';
-import Index from './05_第三方组件/asyncstorage/index';
+// import Index from './05_第三方组件/asyncstorage/index';
+import Index from './05_第三方组件/geolocation/index';
 
 
 export default function App() {
