@@ -10,14 +10,13 @@ import {View} from 'react-native';
 // import Index from './05_第三方组件/asyncstorage/index';
 // import Index from './05_第三方组件/geolocation/index';
 // import Index from './05_第三方组件/rncamera/index';
-import Index from './05_第三方组件/imagepicker/index';
-
-
+// import Index from './05_第三方组件/imagepicker/index';
+import Loading from './05_第三方组件/zidingyizujian/index';
 
 export default function App() {
   return (
     <View>
-      <Index></Index>
+      <Loading customText="自定义文本"></Loading>
     </View>
   );
 }
