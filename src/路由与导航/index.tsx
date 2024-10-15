@@ -11,11 +11,14 @@ import React from 'react';
 
 /* Stack导航 */
 import StackIndex from './Stack导航/index';
+/* tab 导航 */
+import TabIndex from './tab导航/index';
 export default function index() {
   return (
     <>
       {/* <Text>index</Text> */}
-      <StackIndex></StackIndex>
+      {/* <StackIndex></StackIndex> */}
+      <TabIndex></TabIndex>
     </>
   );
 }
